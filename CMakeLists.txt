@@ -47,9 +47,9 @@ set(TEST_DIR ${CMAKE_SOURCE_DIR}/test)
 # Enable testing with CTest
 include(CTest)
 
-# Requires Boost 1.54 at least
-find_package(Boost 1.55 REQUIRED)
-find_package(Boost 1.55 COMPONENTS unit_test_framework REQUIRED)
+# Requires Boost 1.46 at least
+find_package(Boost 1.46 REQUIRED)
+find_package(Boost 1.46 COMPONENTS unit_test_framework REQUIRED)
 
 # Define include directories
 include_directories(${Boost_INCLUDE_DIRS})
