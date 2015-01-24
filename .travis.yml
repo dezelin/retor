@@ -18,7 +18,7 @@ before_install:
   - sudo apt-get install -qq g++-4.8
   - sudo apt-get install -qq clang
   - sudo apt-get install -qq cmake
-  - sudo apt-get install -qq libboost1X.55-all-dev
+  - sudo apt-get install -qq libboost1.55-all-dev
   - sudo apt-get install -qq doxygen
   - sudo apt-get install -qq graphviz
 
