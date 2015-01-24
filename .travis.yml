@@ -1,0 +1,28 @@
+language:
+  - c++
+
+compiler:
+  - clang
+  - gcc
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq build-essential
+  - sudo apt-get install -qq clang cmake
+  - sudo apt-get install -qq libboost-all-dev
+  - sudo apt-get install -qq doxygen graphviz
+
+branches:
+  only:
+    - master
+    - devel
+
+script:
+  - rm -rf build/
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make
+  - make doc
+  - make test
+  - sudo make install
